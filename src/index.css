@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --darkBg: rgba(4, 7, 20, 1);
+  --lightGrey: rgba(227, 227, 227, 1);
+  --tmdbDarkBlue: rgba(3, 37, 65, 1);
+  --tmdbLightBlue: rgba(1, 180, 228, 1);
+  --tmdbLighterGreen: rgba(192, 254, 207, 1);
+  --tmdbLightGreen: rgba(30, 213, 169, 1);
+}
+
+body {
+  background-color: var(--tmdbDarkBlue);
+}
+
+::selection {
+  color: var(--tmdbLightBlue);
+  /* color: #01b4e4; */
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tmdbDarkBlue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tmdbLightBlue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lightGrey);
+}
